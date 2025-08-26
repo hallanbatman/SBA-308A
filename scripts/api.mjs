@@ -1,7 +1,7 @@
 // Stores API KEY and fetch requests using fetch + async/await
 
 // Replaced key for 'neededString' to bypass GitGuardian
-const neededString = "live_wtYbHEG06tzxmPwtXqKI6rnbh7TPFnTAPqKZuMJ63l6YMSlH281252k4UHJuBxiQ";
+const neededString = "live_rwXE1KcBrsWLcVC6wf0NTp0qEz5j8cRTaw5QTYQyJKtzGu5XUqrdEvZUxExRo9Va";
 const API_URL = "https://api.thedogapi.com/v1/images/search";
 
 // Fetch dogs with breed info

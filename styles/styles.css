@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%;
+    height: 90%;
 }
 
 body {
@@ -11,3 +11,26 @@ body {
   background:beige;
 }
 
+#dog-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.dog-card {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  width: 400px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.dog-card:hover {
+  transform: scale(1.05);
+}
+.dog-card img {
+width: 400px;
+height: 400px;
+object-fit: cover;
+border-radius: 8px;
+}
