@@ -4,18 +4,18 @@ const container = document.getElementById("dog-container");
 
 // Render dogs into clickable cards
 export function renderDogs(dogs, onChoose) {
-  container.innerHTML = "";
+    container.innerHTML = "";
 
     dogs.forEach((dog, index) => {
-    const div = document.createElement("div");
-    div.className = "dog-card";
+        const div = document.createElement("div");
+        div.className = "dog-card";
 
         // Dog image + breed name
-    div.innerHTML = `
+        div.innerHTML = `
       <img src="${dog.url}" alt="${dog.breeds[0].name}" />
       <p>${dog.breeds[0].name}</p>
     `;
-    div.onclick = () => onChoose(index);
-    container.appendChild(div);
-  });
+        div.onclick = () => onChoose(index);
+        container.appendChild(div);
+    });
 }
