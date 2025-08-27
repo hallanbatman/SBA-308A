@@ -1,5 +1,17 @@
 # SBA 308A: JavaScript Web 
 
+## Application Description
+This project is a single-page web application, built using asynchronous JavaScript and The Dog API. The game presents users with two random dog images side by side, each labeled with its breed name. The user clicks on their preferred dog, and the chosen dog remains on screen while the other is replaced with a new random dog.
+
+## Concepts and Features
+- Use of fetch and async/await to handle API calls cleanly.
+- Clear separation of concerns by organizing code into three modules:
+    - `api.mjs` → handles all API communication.
+    - `ui.mjs` → manages DOM rendering and event listeners.
+    - `main.mjs` → contains the game logic and orchestrates interactions.
+- A responsive and engaging interface styled with CSS, including standardized image sizes for a consistent gallery look.
+- Proper handling of asynchronous behavior to avoid race conditions and ensure the game runs smoothly.
+
 ## Objectives
 - Use asynchronous JavaScript tools to build a responsive web application.
 - Demonstrate understanding of the JavaScript event loop.
@@ -24,9 +36,16 @@
 
 ## Reflection
 - What could you have done differently during the planning stages of your project to make the execution easier?
+    - I could have planned an external API KEY to be hidden outside the front end script.
 
 - Were there any requirements that were difficult to implement? What do you think would make them easier to implement in future projects?
 
+    - The `chosenIndex` logic to keep the `chosenDog` and replaced the `otherDog` was a bit more complicated to come up with it.
+
 - What would you add to, or change about your application if given more time?
 
+    - I would add the ability to save favorite breeds into a local memory.
+
 - Use this space to make notes for your future self about anything that you think is important to remember about this process, or that may aid you when attempting something similar again.
+
+    - How to bypass the API KEY in the front end.
